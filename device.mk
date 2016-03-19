@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Boot animation (We're using 1080p for the Boot animation since the 4K option is limited to Sonys proprietary system)
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/satsuki/overlay
 
