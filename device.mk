@@ -59,6 +59,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=480 \
     ro.usb.pid_suffix=1DB
 
+# Dalvik VM specific for devices with 2048 MB of RAM (While the E6853 has more RAM, this setting is recommended)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/kitakami/platform.mk)
 $(call inherit-product, vendor/sony/satsuki/satsuki-vendor.mk)
+
