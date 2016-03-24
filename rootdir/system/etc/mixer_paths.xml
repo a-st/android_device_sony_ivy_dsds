@@ -2643,7 +2643,7 @@
     </path>
 
     <path name="voice-dmic-ef">
-        <path name="dmic-endfire" />
+        <path name="handset-dmic-endfire" />
     </path>
 
     <path name="voice-speaker-dmic-ef">
