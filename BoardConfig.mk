@@ -18,6 +18,9 @@ TARGET_BOOTLOADER_BOARD_NAME := E6853
 
 #Kernel
 TARGET_KERNEL_CONFIG := cyanogen_kitakami_satsuki_defconfig
+
+WIFI_BUS := PCIE
+
 BOARD_KERNEL_CMDLINE += androidboot.hardware=satsuki
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
