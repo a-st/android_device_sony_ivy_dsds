@@ -1850,7 +1850,8 @@
         <ctl name="DEC9 Volume" value="106" />
     </path>
 
-    <path name="mono-mic-split-stereo-common">
+    <path name="speaker-mono-mic-common">
+        <path name="dmic1" />
         <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
         <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
@@ -1860,23 +1861,23 @@
         <ctl name="IIR1 INP1 MUX" value="DEC7" />
     </path>
 
-    <path name="mono-mic-split-stereo">
-        <path name="mono-mic-split-stereo-common" />
+    <path name="speaker-mono-mic">
+        <path name="speaker-mono-mic-common" />
         <ctl name="DEC7 Volume" value="84" />
     </path>
 
-   <path name="mono-mic-split-stereo-gain-low">
-        <path name="mono-mic-split-stereo-common" />
+    <path name="speaker-mono-mic-gain-low">
+        <path name="speaker-mono-mic-common" />
         <ctl name="DEC7 Volume" value="84" />
     </path>
 
-    <path name="mono-mic-split-stereo-gain-mid">
-        <path name="mono-mic-split-stereo-common" />
+    <path name="speaker-mono-mic-gain-mid">
+        <path name="speaker-mono-mic-common" />
         <ctl name="DEC7 Volume" value="89" />
     </path>
 
-    <path name="mono-mic-split-stereo-gain-high">
-        <path name="mono-mic-split-stereo-common" />
+    <path name="speaker-mono-mic-gain-high">
+        <path name="speaker-mono-mic-common" />
         <ctl name="DEC7 Volume" value="95" />
     </path>
 
