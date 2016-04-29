@@ -13,13 +13,13 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/satsuki/device.mk)
+$(call inherit-product, device/sony/ivy/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_NAME := full_satsuki
-PRODUCT_DEVICE := satsuki
-PRODUCT_MODEL := E6853
+PRODUCT_NAME := full_ivy_dsds
+PRODUCT_DEVICE := ivy_dsds
+PRODUCT_MODEL := E6533
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/satsuki_full.mk
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/full_ivy_dsds.mk

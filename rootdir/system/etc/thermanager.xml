@@ -1,35 +1,32 @@
 <thermanager>
 	<resources>
 		<!-- thermal zones -->
-		<resource name="bms"  type="tz">/sys/class/thermal/thermal_zone0</resource>
-		<resource name="flash_therm"  type="tz">/sys/class/thermal/thermal_zone1</resource>
+		<resource name="tsens_tz_sensor0"  type="tz">/sys/class/thermal/thermal_zone1</resource>
+		<resource name="tsens_tz_sensor1"  type="tz">/sys/class/thermal/thermal_zone2</resource>
+		<resource name="tsens_tz_sensor2"  type="tz">/sys/class/thermal/thermal_zone3</resource>
+		<resource name="tsens_tz_sensor3"  type="tz">/sys/class/thermal/thermal_zone4</resource>
+		<resource name="tsens_tz_sensor4"  type="tz">/sys/class/thermal/thermal_zone5</resource>
+		<resource name="tsens_tz_sensor5"  type="tz">/sys/class/thermal/thermal_zone6</resource>
 
-		<resource name="tsens_tz_sensor0"  type="tz">/sys/class/thermal/thermal_zone2</resource>
-		<resource name="tsens_tz_sensor1"  type="tz">/sys/class/thermal/thermal_zone3</resource>
-		<resource name="tsens_tz_sensor2"  type="tz">/sys/class/thermal/thermal_zone4</resource>
-		<resource name="tsens_tz_sensor3"  type="tz">/sys/class/thermal/thermal_zone5</resource>
-		<resource name="tsens_tz_sensor4"  type="tz">/sys/class/thermal/thermal_zone6</resource>
-		<resource name="tsens_tz_sensor5"  type="tz">/sys/class/thermal/thermal_zone7</resource>
+		<resource name="tsens_tz_sensor6"  type="tz">/sys/class/thermal/thermal_zone7</resource>  <!-- cpu7 -->
+		<resource name="tsens_tz_sensor7"  type="tz">/sys/class/thermal/thermal_zone8</resource> <!-- cpu0 -->
+		<resource name="tsens_tz_sensor8"  type="tz">/sys/class/thermal/thermal_zone9</resource> <!-- cpu1 -->
+		<resource name="tsens_tz_sensor9"  type="tz">/sys/class/thermal/thermal_zone10</resource> <!-- cpu2 -->
+		<resource name="tsens_tz_sensor10" type="tz">/sys/class/thermal/thermal_zone11</resource> <!-- cpu3 -->
+		<resource name="tsens_tz_sensor11" type="tz">/sys/class/thermal/thermal_zone12</resource> <!-- gpu0 -->
+		<resource name="tsens_tz_sensor12" type="tz">/sys/class/thermal/thermal_zone13</resource> <!-- gpu1 -->
+		<resource name="tsens_tz_sensor13" type="tz">/sys/class/thermal/thermal_zone14</resource> <!-- cpu4 -->
+		<resource name="tsens_tz_sensor14" type="tz">/sys/class/thermal/thermal_zone15</resource> <!-- cpu5 -->
+		<resource name="tsens_tz_sensor15" type="tz">/sys/class/thermal/thermal_zone16</resource> <!-- cpu6 -->
 
-		<resource name="tsens_tz_sensor6"  type="tz">/sys/class/thermal/thermal_zone8</resource>  <!-- cpu7 -->
-		<resource name="tsens_tz_sensor7"  type="tz">/sys/class/thermal/thermal_zone9</resource> <!-- cpu0 -->
-		<resource name="tsens_tz_sensor8"  type="tz">/sys/class/thermal/thermal_zone10</resource> <!-- cpu1 -->
-		<resource name="tsens_tz_sensor9"  type="tz">/sys/class/thermal/thermal_zone11</resource> <!-- cpu2 -->
-		<resource name="tsens_tz_sensor10" type="tz">/sys/class/thermal/thermal_zone12</resource> <!-- cpu3 -->
-		<resource name="tsens_tz_sensor11" type="tz">/sys/class/thermal/thermal_zone13</resource> <!-- gpu0 -->
-		<resource name="tsens_tz_sensor12" type="tz">/sys/class/thermal/thermal_zone14</resource> <!-- gpu1 -->
-		<resource name="tsens_tz_sensor13" type="tz">/sys/class/thermal/thermal_zone15</resource> <!-- cpu4 -->
-		<resource name="tsens_tz_sensor14" type="tz">/sys/class/thermal/thermal_zone16</resource> <!-- cpu5 -->
-		<resource name="tsens_tz_sensor15" type="tz">/sys/class/thermal/thermal_zone17</resource> <!-- cpu6 -->
-
-		<resource name="pm8994_tz" type="tz">/sys/class/thermal/thermal_zone18</resource>
-		<resource name="msm_therm" type="tz">/sys/class/thermal/thermal_zone19</resource>
-		<resource name="emmc_therm" type="tz">/sys/class/thermal/thermal_zone20</resource>
-		<resource name="pa_therm0" type="tz">/sys/class/thermal/thermal_zone21</resource>
-		<resource name="pa_therm1" type="tz">/sys/class/thermal/thermal_zone22</resource>
-		<resource name="quiet_therm" type="tz">/sys/class/thermal/thermal_zone23</resource>
-		<resource name="xo_therm" type="tz">/sys/class/thermal/thermal_zone24</resource>
-		<resource name="battery" type="tz">/sys/class/thermal/thermal_zone25</resource> <!-- same values as zone0, bms -->
+		<resource name="pm8994_tz" type="tz">/sys/class/thermal/thermal_zone17</resource>
+		<resource name="msm_therm" type="tz">/sys/class/thermal/thermal_zone18</resource>
+		<resource name="emmc_therm" type="tz">/sys/class/thermal/thermal_zone19</resource>
+		<resource name="pa_therm0" type="tz">/sys/class/thermal/thermal_zone20</resource>
+		<resource name="pa_therm1" type="tz">/sys/class/thermal/thermal_zone21</resource>
+		<resource name="quiet_therm" type="tz">/sys/class/thermal/thermal_zone22</resource>
+		<resource name="xo_therm" type="tz">/sys/class/thermal/thermal_zone23</resource>
+		<resource name="battery" type="tz">/sys/class/thermal/thermal_zone24</resource> <!-- same values as zone0, bms -->
 
 		<resource name="temp-core" type="union">
 <!--			<resource name="msm_therm" /> -->
@@ -155,7 +152,7 @@
 		<mitigation level="5"><value resource="backlight">95</value></mitigation>
 		<mitigation level="6"><value resource="backlight">78</value></mitigation>
 		<mitigation level="7"><value resource="backlight">64</value></mitigation>
-		<mitigation level="8"><value resource="backlight">51</value></mitigation>
+		<mitigation level="8"><value resource="backlight">52</value></mitigation>
 		<mitigation level="9"><value resource="backlight">44</value></mitigation>
 	</control>
 
@@ -217,16 +214,22 @@
 		<threshold>
 			<mitigation name="usb" level="off" />
 		</threshold>
-		<threshold trigger="50500" clear="49500">
+		<threshold trigger="58700" clear="57200">
 			<mitigation name="usb" level="1" />
 		</threshold>
-		<threshold trigger="51500" clear="50500">
+		<threshold trigger="61700" clear="58700">
 			<mitigation name="usb" level="2" />
 		</threshold>
-		<threshold trigger="52500" clear="51500">
+		<threshold trigger="63100" clear="61700">
+			<mitigation name="usb" level="3" />
+		</threshold>
+		<threshold trigger="64300" clear="63100">
 			<mitigation name="usb" level="4" />
 		</threshold>
-		<threshold trigger="53300" clear="52300">
+		<threshold trigger="65400" clear="64300">
+			<mitigation name="usb" level="5" />
+		</threshold>
+		<threshold trigger="66600" clear="65400">
 			<mitigation name="usb" level="6" />
 		</threshold>
 	</configuration>
@@ -236,16 +239,16 @@
 		<threshold>
 			<mitigation name="charging" level="off" />
 		</threshold>
-		<threshold trigger="50500" clear="49500">
-			<mitigation name="charging" level="5" />
+		<threshold trigger="47700" clear="43000">
+			<mitigation name="charging" level="3" />
 		</threshold>
-		<threshold trigger="51500" clear="50500">
+		<threshold trigger="52000" clear="51400">
 			<mitigation name="charging" level="8" />
 		</threshold>
-		<threshold trigger="52500" clear="51500">
+		<threshold trigger="53200" clear="52600">
 			<mitigation name="charging" level="9" />
 		</threshold>
-		<threshold trigger="53300" clear="52300">
+		<threshold trigger="53600" clear="53200">
 			<mitigation name="charging" level="12" />
 		</threshold>
 	</configuration>
@@ -254,10 +257,10 @@
 		<threshold>
 			<mitigation name="battery_protect" level="off" />
 		</threshold>
-		<threshold trigger="43000" clear="41000">
+		<threshold trigger="40000" clear="38000">
 			<mitigation name="battery_protect" level="1" />
 		</threshold>
-		<threshold trigger="67000" clear="63000">
+		<threshold trigger="67000" clear="60000">
 			<mitigation name="battery_protect" level="2" />
 		</threshold>
 	</configuration>
@@ -267,13 +270,13 @@
 		<threshold>
 			<mitigation name="gpu" level="off" />
 		</threshold>
-		<threshold trigger="52500" clear="51500">
+		<threshold trigger="54000" clear="53600">
 			<mitigation name="gpu" level="2" />
 		</threshold>
-		<threshold trigger="53300" clear="52300">
+		<threshold trigger="55000" clear="54500">
 			<mitigation name="gpu" level="3" />
 		</threshold>
-		<threshold trigger="54500" clear="53500">
+		<threshold trigger="55900" clear="55500">
 			<mitigation name="gpu" level="5" />
 		</threshold>
 	</configuration>
@@ -283,7 +286,7 @@
 		<threshold>
 			<mitigation name="modem" level="off" />
 		</threshold>
-		<threshold trigger="53500" clear="52000">
+		<threshold trigger="55500" clear="55000">
 			<mitigation name="modem" level="1" />
 		</threshold>
 	</configuration>
@@ -293,31 +296,31 @@
 		<threshold>
 			<mitigation name="backlight" level="off" />
 		</threshold>
-		<threshold trigger="43000" clear="41000">
+		<threshold trigger="47700" clear="43000">
 			<mitigation name="backlight" level="1" />
 		</threshold>
-		<threshold trigger="45000" clear="43000">
+		<threshold trigger="48900" clear="47700">
 			<mitigation name="backlight" level="2" />
 		</threshold>
-		<threshold trigger="47000" clear="45000">
+		<threshold trigger="50200" clear="48900">
 			<mitigation name="backlight" level="3" />
 		</threshold>
-		<threshold trigger="50500" clear="49500">
+		<threshold trigger="51400" clear="50200">
 			<mitigation name="backlight" level="4" />
 		</threshold>
-		<threshold trigger="51500" clear="50500">
+		<threshold trigger="52000" clear="51400">
 			<mitigation name="backlight" level="5" />
 		</threshold>
-		<threshold trigger="52500" clear="51500">
+		<threshold trigger="52600" clear="52000">
 			<mitigation name="backlight" level="6" />
 		</threshold>
-		<threshold trigger="53300" clear="52300">
+		<threshold trigger="53200" clear="52600">
 			<mitigation name="backlight" level="7" />
 		</threshold>
-		<threshold trigger="54000" clear="53000">
+		<threshold trigger="53600" clear="53200">
 			<mitigation name="backlight" level="8" />
 		</threshold>
-		<threshold trigger="54500" clear="53500">
+		<threshold trigger="54000" clear="53600">
 			<mitigation name="backlight" level="9" />
 		</threshold>
 	</configuration>
@@ -327,31 +330,25 @@
 		<threshold>
 			<mitigation name="cpu-a53" level="off" />
 		</threshold>
-		<threshold trigger="49000" clear="47000">
-			<mitigation name="cpu-a53" level="1" />
-		</threshold>
-		<threshold trigger="50500" clear="49500">
+		<threshold trigger="52600" clear="52000">
 			<mitigation name="cpu-a53" level="2" />
 		</threshold>
-		<threshold trigger="51500" clear="50500">
-			<mitigation name="cpu-a53" level="3" />
-		</threshold>
-		<threshold trigger="53000" clear="52000">
+		<threshold trigger="53600" clear="53200">
 			<mitigation name="cpu-a53" level="4" />
 		</threshold>
-		<threshold trigger="53300" clear="52300">
+		<threshold trigger="54500" clear="54000">
 			<mitigation name="cpu-a53" level="5" />
 		</threshold>
-		<threshold trigger="54000" clear="53000">
+		<threshold trigger="55500" clear="55000">
 			<mitigation name="cpu-a53" level="6" />
 		</threshold>
-		<threshold trigger="54500" clear="53500">
+		<threshold trigger="55900" clear="55500">
 			<mitigation name="cpu-a53" level="8" />
 		</threshold>
-		<threshold trigger="55500" clear="54500">
+		<threshold trigger="56300" clear="55900">
 			<mitigation name="cpu-a53" level="9" />
 		</threshold>
-		<threshold trigger="56000" clear="55500">
+		<threshold trigger="56800" clear="56300">
 			<mitigation name="cpu-a53" level="10" />
 		</threshold>
 	</configuration>
@@ -376,13 +373,25 @@
 		<threshold>
 			<mitigation name="cpu-a57" level="off" />
 		</threshold>
-		<threshold trigger="47000" clear="45000">
+		<threshold trigger="48900" clear="47700">
+			<mitigation name="cpu-a57" level="2" />
+		</threshold>
+		<threshold trigger="50200" clear="48900">
+			<mitigation name="cpu-a57" level="4" />
+		</threshold>
+		<threshold trigger="51400" clear="50200">
 			<mitigation name="cpu-a57" level="7" />
 		</threshold>
-		<threshold trigger="49000" clear="47000">
-			<mitigation name="cpu-a57" level="9" />
+		<threshold trigger="52000" clear="51400">
+			<mitigation name="cpu-a57" level="10" />
 		</threshold>
-		<threshold trigger="50500" clear="49500">
+		<threshold trigger="52600" clear="52000">
+			<mitigation name="cpu-a57" level="11" />
+		</threshold>
+		<threshold trigger="53600" clear="53200">
+			<mitigation name="cpu-a57" level="12" />
+		</threshold>
+		<threshold trigger="54500" clear="54000">
 			<mitigation name="cpu-a57" level="13" />
 		</threshold>
 	</configuration>

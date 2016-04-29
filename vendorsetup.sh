@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_satsuki-userdebug
-add_lunch_combo cm_satsuki-eng
+add_lunch_combo cm_ivy_dsds-userdebug
+add_lunch_combo cm_ivy_dsds-eng
