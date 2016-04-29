@@ -18,6 +18,17 @@ $(call inherit-product, device/sony/ivy_dsds/device.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# DSDS specific properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.radio.multisim.config=dsds \
+	persist.multisim.config=dsds \
+	telephony.lteOnCdmaDevice=0 \
+	ro.telephony.default_network=0,1
+
+# DSDS second ril start script
+PRODUCT_COPY_FILES += \
+	device/sony/kitakami/rootdir/init.class_main.sh:root/init.class_main.sh
+
 PRODUCT_NAME := full_ivy_dsds
 PRODUCT_DEVICE := ivy_dsds
 PRODUCT_MODEL := E6533
