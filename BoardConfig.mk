@@ -17,7 +17,7 @@ include device/sony/kitakami/PlatformConfig.mk
 TARGET_BOOTLOADER_BOARD_NAME := E6533
 
 #Kernel
-TARGET_KERNEL_CONFIG := cyanogen_kitakami_ivy_dsds_defconfig
+TARGET_KERNEL_CONFIG := cyanogen_kitakami_ivy_defconfig
 
 WIFI_BUS := PCIE
 
@@ -33,3 +33,7 @@ TARGET_KERNEL_HAVE_EXFAT := true
 TARGET_KERNEL_HAVE_NTFS := true
 
 BLOCK_BASED_OTA := false
+
+#TWRP
+#RECOVERY_VARIANT := twrp
+#TW_THEME := portrait_hdpi
